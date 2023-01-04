@@ -1,3 +1,16 @@
+'''
+
+The script takes a .txt file with the following 2 possible line structures
+and creates a clean .csv file for further data analysis.
+
+sample_package {'bugowner': 'login: spiderman  - email: peter.parker@company.com  - name: Peter Parker -  1st manager: Norman Osbourne -  2nd manager: Doctor Octopus'}
+
+sample_package {'bugowner': 'daredevil'}
+
+
+
+'''
+
 import csv
 
 # Set up the CSV file
@@ -59,5 +72,3 @@ with open('SLE-15-GA.txt', 'r', encoding='utf-8') as input_file:
 # Close the CSV file
 csvfile.close()
 
-print(data)
-print(data_dict)
